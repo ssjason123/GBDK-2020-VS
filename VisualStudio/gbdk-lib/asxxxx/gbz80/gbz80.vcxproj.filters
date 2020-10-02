@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;s</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\__sdcc_call_hl.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_memcpy.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_memset.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_strcmp.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_strcpy.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\abs.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\atomic_flag_test_and_set.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\crt0_rle.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\div.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\itoa.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\labs.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\ltoa.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\mul.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\reverse.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\setjmp.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\shift.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\strlen.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\__assert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_divslong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_divulong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_modslong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_modulong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_mullong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atoi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atomic_flag_clear.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\bcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\bsearch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isalpha.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isdigit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\islower.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isspace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isupper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\printf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\puts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\qsort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\scanf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\sprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\tolower.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\toupper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

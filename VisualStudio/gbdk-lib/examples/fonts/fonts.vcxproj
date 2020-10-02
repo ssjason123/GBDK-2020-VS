@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DB614D57-A939-4F14-985C-52B41E60048B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fonts</RootNamespace>
+    <ProjectName>fonts</ProjectName>
+    <PortType>gbz80</PortType>
+    <BuildFormat>Binary</BuildFormat>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\fonts.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+</Project>

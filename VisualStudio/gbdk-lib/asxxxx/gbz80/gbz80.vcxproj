@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A718DD35-8360-43D8-82D2-45D27B94C3A8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gbz80</RootNamespace>
+    <ProjectName>gbz80</ProjectName>
+    <PortType>gbz80</PortType>
+    <BuildFormat>Library</BuildFormat>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GBDKSupported>false</GBDKSupported>
+    <GBDKType>GBDK-2020</GBDKType>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GBDKSupported>false</GBDKSupported>
+    <GBDKType>GBDK-2020</GBDKType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
+    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
+    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PostBuildEvent>
+      <Command>mkdir $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80
+copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80\$(TargetName)$(Extension)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PostBuildEvent>
+      <Command>mkdir $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80
+copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80\$(TargetName)$(Extension)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\abs.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\atomic_flag_test_and_set.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\crt0_rle.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\div.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\itoa.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\labs.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\ltoa.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\mul.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\reverse.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\setjmp.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\shift.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\strlen.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_memcpy.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_memset.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_strcmp.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\_strcpy.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\__sdcc_call_hl.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atoi.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atol.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\atomic_flag_clear.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\bcd.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\bsearch.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isalpha.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isdigit.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\islower.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isspace.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\isupper.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\printf.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\puts.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\qsort.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\scanf.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\sprintf.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strcat.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\string.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncat.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncmp.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\strncpy.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\time.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\tolower.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\toupper.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_divslong.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_divulong.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_modslong.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_modulong.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\_mullong.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\libc\__assert.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+</Project>
