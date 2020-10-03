@@ -31,11 +31,9 @@
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PostBuildEvent>
@@ -43,6 +41,9 @@
 copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80\$(TargetName)$(Extension)
 </Command>
     </PostBuildEvent>
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>SDCC_z80;__gbz80;GBDK=1</SDCCPreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PostBuildEvent>
@@ -50,6 +51,9 @@ copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\
 copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gbz80\$(TargetName)$(Extension)
 </Command>
     </PostBuildEvent>
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>SDCC_z80;__gbz80;GBDK=1</SDCCPreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\asm\gbz80\abs.s" />

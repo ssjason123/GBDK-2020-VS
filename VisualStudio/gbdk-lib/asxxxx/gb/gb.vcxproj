@@ -28,11 +28,9 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
     <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);SDCC_z80;__gbz80;GBDK=1</PreprocessorDefinitions>
     <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -42,6 +40,9 @@ copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\
 copy /y $(IntDir)crt0$(ObjectExtension) $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gb\crt0$(ObjectExtension)
 copy /y $(SolutionDir)..\gbdk-lib\libc\gb\global.s $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\global.s</Command>
     </PostBuildEvent>
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>SDCC_z80;__gbz80;GBDK=1</SDCCPreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PostBuildEvent>
@@ -50,6 +51,9 @@ copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\
 copy /y $(IntDir)crt0$(ObjectExtension) $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\gb\crt0$(ObjectExtension)
 copy /y $(SolutionDir)..\gbdk-lib\libc\gb\global.s $(SolutionDir)..\gbdk-lib\lib\small\asxxxx\global.s</Command>
     </PostBuildEvent>
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>SDCC_z80;__gbz80;GBDK=1</SDCCPreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\arand.s" />

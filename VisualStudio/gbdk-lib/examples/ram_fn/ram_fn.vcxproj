@@ -22,13 +22,21 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);_inc_ram=0xD000;_inc_hiram=0xFFA0</PreprocessorDefinitions>
     <GlobalSymbols>_shadow_OAM=0xC000;.STACK=0xDEFF;.refresh_OAM=0xFF80;_inc_ram=0xD000;_inc_hiram=0xFFA0</GlobalSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <PreprocessorDefinitions>$(PreprocessorDefinitions);_inc_ram=0xD000;_inc_hiram=0xFFA0</PreprocessorDefinitions>
     <GlobalSymbols>_shadow_OAM=0xC000;.STACK=0xDEFF;.refresh_OAM=0xFF80;_inc_ram=0xD000;_inc_hiram=0xFFA0</GlobalSymbols>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>_inc_ram=0xD000;_inc_hiram=0xFFA0</SDCCPreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <SDCCPreprocessorDefinitions>_inc_ram=0xD000;_inc_hiram=0xFFA0</SDCCPreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\ram_fn.c" />
   </ItemGroup>
