@@ -15,7 +15,7 @@
     <ProjectGuid>{A1EFDF72-8958-41D2-A3F3-977CAD736B5B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>farptr</RootNamespace>
-    <ProjectName>farptr</ProjectName>
+    <ProjectName>banks_farptr</ProjectName>
     <PortType>gbz80</PortType>
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
@@ -24,17 +24,19 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GameBoyMemoryBankController>1</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks_farptr;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GameBoyMemoryBankController>1</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks_farptr;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank2code.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_farptr\bank2code.c">
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">1</CodeBank>
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">1</CodeBank>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\farptr.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_farptr\banks_farptr.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
 </Project>

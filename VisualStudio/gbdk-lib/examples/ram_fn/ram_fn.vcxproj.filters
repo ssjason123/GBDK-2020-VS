@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\ram_fn.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\ram_function\ram_fn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

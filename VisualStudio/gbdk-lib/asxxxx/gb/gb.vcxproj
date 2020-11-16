@@ -65,6 +65,9 @@ copy /y $(SolutionDir)..\gbdk-lib\libc\gb\global.s $(SolutionDir)..\gbdk-lib\lib
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\delay.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\drawing.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\far_ptr.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect_bk.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect_wi.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\font.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\f_ibm_sh.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\f_italic.s" />
@@ -81,9 +84,11 @@ copy /y $(SolutionDir)..\gbdk-lib\libc\gb\global.s $(SolutionDir)..\gbdk-lib\lib
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\input.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\joy.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\lcd.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\mode.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\mv_spr.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\nowait.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\pad.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\pad_ex.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\rand.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\sample.s" />
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\serial.s" />

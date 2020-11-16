@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_0.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_0.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_1.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_2.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_3.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\banks.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

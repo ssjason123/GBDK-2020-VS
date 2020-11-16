@@ -21,10 +21,14 @@
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\rpn;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\rpn;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\rpn.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\rpn\rpn.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
 </Project>

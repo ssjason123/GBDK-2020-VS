@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\farptr.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_farptr\bank2code.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank2code.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_farptr\banks_farptr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\MBC1_RAM_INIT.s">
+    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_new\MBC1_RAM_INIT.s">
       <Filter>Source Files</Filter>
     </AsmCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\new_banks.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_new\banks_new.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\irq.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\irq\irq.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{90D78735-F65B-43D3-9FDA-2701A2299C0D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fprpn</RootNamespace>
+    <ProjectName>fprpn</ProjectName>
+    <PortType>gbz80</PortType>
+    <BuildFormat>Binary</BuildFormat>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\fprpn;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\fprpn;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\fprpn\fprpn.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

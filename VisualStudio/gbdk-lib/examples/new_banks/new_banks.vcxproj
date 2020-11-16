@@ -15,7 +15,7 @@
     <ProjectGuid>{A7528083-BE2E-4527-83A8-3F73E6673F79}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>new_banks</RootNamespace>
-    <ProjectName>new_banks</ProjectName>
+    <ProjectName>banks_new</ProjectName>
     <PortType>gbz80</PortType>
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
@@ -25,17 +25,19 @@
     <GameBoyRamBankCount>4</GameBoyRamBankCount>
     <GameBoyMemoryBankController>2</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks_new;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GameBoyRamBankCount>4</GameBoyRamBankCount>
     <GameBoyMemoryBankController>2</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks_new;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <ItemGroup>
-    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\MBC1_RAM_INIT.s" />
+    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_new\MBC1_RAM_INIT.s" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\new_banks.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks_new\banks_new.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
 </Project>

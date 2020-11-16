@@ -141,6 +141,21 @@
     <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\crt0.s">
       <Filter>Source Files</Filter>
     </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\mode.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect_bk.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\fill_rect_wi.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
+    <AsmCompile Include="..\..\..\..\gbdk-lib\libc\gb\pad_ex.s">
+      <Filter>Source Files</Filter>
+    </AsmCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gbdk-lib\libc\gb\digits.c">

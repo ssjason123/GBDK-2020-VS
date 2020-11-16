@@ -10,19 +10,25 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\lcd_isr_wobble;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\lcd_isr_wobble;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\lcd_isr_wobble\lcd_isr_wobble.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{00AC44F1-E911-40A3-AA74-88D91BAE68AB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>wobble</RootNamespace>
-    <ProjectName>wobble</ProjectName>
+    <ProjectName>lcd_isr_wobble</ProjectName>
     <PortType>gbz80</PortType>
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\wobble.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
 </Project>

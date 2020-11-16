@@ -25,31 +25,33 @@
     <GameBoyRamBankCount>4</GameBoyRamBankCount>
     <GameBoyMemoryBankController>2</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GameBoyRamBankCount>4</GameBoyRamBankCount>
     <GameBoyMemoryBankController>2</GameBoyMemoryBankController>
     <GameBoyRomBankCount>4</GameBoyRomBankCount>
+    <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\banks;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks.c" />
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_0.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\banks.c" />
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_0.c">
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">0</DataBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">0</DataBank>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_1.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_1.c">
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">1</CodeBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">1</DataBank>
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">1</CodeBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">1</DataBank>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_2.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_2.c">
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">2</CodeBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">2</DataBank>
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">2</CodeBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">2</DataBank>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\bank_3.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\banks\bank_3.c">
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">3</CodeBank>
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">3</DataBank>
       <CodeBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3</CodeBank>

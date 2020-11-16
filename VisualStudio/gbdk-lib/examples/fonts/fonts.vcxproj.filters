@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\fonts.c">
+    <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\fonts\fonts.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

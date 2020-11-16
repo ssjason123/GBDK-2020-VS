@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\space.s">
+    <AsmCompile Include="..\..\..\..\gbdk-lib\examples\gb\space\space.s">
       <Filter>Source Files</Filter>
     </AsmCompile>
   </ItemGroup>
