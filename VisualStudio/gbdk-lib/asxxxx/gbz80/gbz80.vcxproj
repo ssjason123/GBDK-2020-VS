@@ -28,7 +28,7 @@
     <GBDKSupported>false</GBDKSupported>
     <GBDKType>GBDK-2020</GBDKType>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories);$(SolutionDir)/../gbdk-lib/include</AdditionalIncludeDirectories>
   </PropertyGroup>
@@ -105,5 +105,5 @@ copy /y $(OutDir)$(TargetName)$(Extension)  $(SolutionDir)..\gbdk-lib\lib\small\
     <ClCompile Include="..\..\..\..\gbdk-lib\libc\_mullong.c" />
     <ClCompile Include="..\..\..\..\gbdk-lib\libc\__assert.c" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.targets" />
 </Project>

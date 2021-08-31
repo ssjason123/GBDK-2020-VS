@@ -20,7 +20,7 @@
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\rand;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
   </PropertyGroup>
@@ -30,5 +30,5 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\rand\rand.c" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.targets" />
 </Project>

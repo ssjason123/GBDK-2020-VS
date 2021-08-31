@@ -20,7 +20,7 @@
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GameBoyRamBankCount>4</GameBoyRamBankCount>
     <GameBoyMemoryBankController>2</GameBoyMemoryBankController>
@@ -58,5 +58,5 @@
       <DataBank Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3</DataBank>
     </ClCompile>
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.targets" />
 </Project>

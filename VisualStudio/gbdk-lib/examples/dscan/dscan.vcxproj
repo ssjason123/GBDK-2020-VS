@@ -20,7 +20,7 @@
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.props" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\dscan;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
@@ -35,7 +35,7 @@
     <ClInclude Include="..\..\..\..\gbdk-lib\examples\gb\dscan\bkg.h" />
     <ClInclude Include="..\..\..\..\gbdk-lib\examples\gb\dscan\fore.h" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>

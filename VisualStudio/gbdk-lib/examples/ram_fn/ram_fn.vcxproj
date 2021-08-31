@@ -20,7 +20,7 @@
     <BuildFormat>Binary</BuildFormat>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GlobalSymbols>_shadow_OAM=0xC000;.STACK=0xDEFF;.refresh_OAM=0xFF80;_inc_ram=0xD000;_inc_hiram=0xFFA0</GlobalSymbols>
     <EmuliciousSourcePaths>$(ProjectDir)..\..\..\..\gbdk-lib\examples\gb\ram_function;$(EmuliciousSourcePaths)</EmuliciousSourcePaths>
@@ -42,5 +42,5 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gbdk-lib\examples\gb\ram_function\ram_fn.c" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)SDCC/SDCC.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SDCC\SDCC.Common.targets" />
 </Project>
